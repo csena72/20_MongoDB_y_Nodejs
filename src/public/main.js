@@ -9,7 +9,7 @@ function enviarProducto(e){
         price: document.getElementById("price").value, 
         thumbnail: document.getElementById("thumbnail").value
     }
-    socket.emit('producto-nuevo', producto);
+    socket.emit('producto-nuevo', producto);    
 }
 
 var template = Handlebars.compile(`
